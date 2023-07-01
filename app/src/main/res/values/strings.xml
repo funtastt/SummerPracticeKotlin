@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">AppForGithub</string>
+<<<<<<< HEAD
+    <string name="app_name">ааааааааа</string>
+    <string name="calculate">Рассчитать</string>
+    <string name="result">Здесь будет итоговый результат</string>
+    <string name="name">Имя</string>
+    <string name="height">Рост</string>
+    <string name="weight">Вес</string>
+    <string name="age">Возраст</string>
+=======
+    <string name="app_name">SummerPractice</string>
+>>>>>>> d68fc4c33987266b4a979ff6d590e169f9c9b012
 </resources>
