@@ -13,4 +13,7 @@
     <string name="fourth_fragment">Fourth fragment</string>
     <string name="second_fragment">Second fragment</string>
     <string name="third_fragment">Third fragment</string>
+    <string name="redirect">Redirect</string>
+    <string name="return">Return</string>
+    <string name="return_text">Return</string>
 </resources>
