@@ -25,7 +25,7 @@ class FifthFragment : Fragment(R.layout.fragment_fifth) {
 
         val btn = binding!!.returnToNotificationsBtn
 
-        btn.setOnClickListener { Navigation.findNavController(view).navigate(R.id.nav_from_fifth_to_notifications) }
+        btn.setOnClickListener { Navigation.findNavController(view).navigateUp() }
     }
 
     override fun onDestroyView() {

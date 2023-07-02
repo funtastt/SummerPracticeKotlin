@@ -25,7 +25,7 @@ class FourthFragment : Fragment(R.layout.fragment_fourth) {
             Snackbar.make(binding!!.root, msg, Snackbar.LENGTH_SHORT).show()
         }
 
-        btn.setOnClickListener { Navigation.findNavController(view).navigate(R.id.nav_from_fourth_to_gallery) }
+        btn.setOnClickListener { Navigation.findNavController(view).navigateUp() }
     }
 
     override fun onDestroyView() {

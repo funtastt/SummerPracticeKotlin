@@ -10,7 +10,7 @@
         android:id="@+id/tv_second_fragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Second fragment"
+        android:text="@string/second_fragment"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

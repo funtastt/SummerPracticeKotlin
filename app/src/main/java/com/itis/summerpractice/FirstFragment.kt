@@ -24,7 +24,7 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
 
         val btn = binding!!.returnToHomeBtn
 
-        btn.setOnClickListener { Navigation.findNavController(view).navigate(R.id.nav_from_first_to_home) }
+        btn.setOnClickListener { Navigation.findNavController(view).navigateUp()}
     }
 
     override fun onDestroyView() {

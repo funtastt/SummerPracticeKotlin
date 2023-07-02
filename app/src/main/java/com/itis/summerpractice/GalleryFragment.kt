@@ -11,21 +11,16 @@ import com.itis.summerpractice.databinding.FragmentCartBinding
 import com.itis.summerpractice.databinding.FragmentGalleryBinding
 
 class GalleryFragment : Fragment(R.layout.fragment_gallery) {
-    private var binding: FragmentGalleryBinding? = null
+    private var _binding: FragmentGalleryBinding? = null
+    private val binding get() = _binding!!
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding = FragmentGalleryBinding.bind(view)
-        val btn = binding!!.btnFromGallery
+        _binding = FragmentGalleryBinding.bind(view)
+        val btn = binding.btnFromGallery
         val bundle = bundleOf("name" to "Hello from GalleryFragment")
 
 
         btn.setOnClickListener { Navigation.findNavController(view).navigate(R.id.nav_from_gallery_to_fourth, bundle) }
     }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        binding = null
-    }
-
 }

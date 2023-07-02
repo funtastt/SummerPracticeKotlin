@@ -25,7 +25,7 @@ class ThirdFragment : Fragment(R.layout.fragment_third) {
 
         val btn = binding!!.returnToCartBtn
 
-        btn.setOnClickListener { Navigation.findNavController(view).navigate(R.id.nav_from_third_to_cart) }
+        btn.setOnClickListener { Navigation.findNavController(view).navigateUp() }
     }
 
     override fun onDestroyView() {

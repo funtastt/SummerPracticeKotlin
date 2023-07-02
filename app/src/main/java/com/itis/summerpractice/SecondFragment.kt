@@ -25,7 +25,7 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
 
         val btn = binding!!.returnToSettingsBtn
 
-        btn.setOnClickListener { Navigation.findNavController(view).navigate(R.id.nav_from_second_to_settings) }
+        btn.setOnClickListener { Navigation.findNavController(view).navigateUp() }
     }
 
     override fun onDestroyView() {
