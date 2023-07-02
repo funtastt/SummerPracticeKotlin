@@ -1,4 +1,4 @@
-package com.itis.appforgithub
+package com.itis.summerpractice
 
 import org.junit.Test
 

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listFragment">
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.itis.summerpractice.ListFragment"
+        android:label="Список стран"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/nav_from_list_to_item"
+            app:destination="@id/itemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemFragment"
+        android:name="com.itis.summerpractice.ItemFragment"
+        android:label="Страна"
+        tools:layout="@layout/fragment_item" >
+        <action
+            android:id="@+id/nav_from_item_to_list"
+            app:destination="@id/listFragment" />
+    </fragment>
+</navigation>
