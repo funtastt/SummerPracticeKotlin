@@ -21,7 +21,7 @@ class NotificationsFragment : Fragment(R.layout.fragment_notifications) {
 
         btn.setOnClickListener {
             Navigation.findNavController(view)
-                .navigate(R.id.nav_from_notifications_to_fifth, bundle)
+                .navigate(R.id.nav_from_notifications, bundle)
         }
     }
 }

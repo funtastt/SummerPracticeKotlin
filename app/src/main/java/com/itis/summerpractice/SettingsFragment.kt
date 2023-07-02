@@ -21,6 +21,6 @@ class SettingsFragment : Fragment(R.layout.fragment_settings) {
 
         val bundle = bundleOf("name" to "Hello from SettingsFragment")
 
-        btn.setOnClickListener { Navigation.findNavController(view).navigate(R.id.nav_from_settings_to_second, bundle) }
+        btn.setOnClickListener { Navigation.findNavController(view).navigate(R.id.nav_from_settings, bundle) }
     }
 }

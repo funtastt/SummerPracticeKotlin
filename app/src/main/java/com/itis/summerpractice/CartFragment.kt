@@ -19,6 +19,6 @@ class CartFragment : Fragment(R.layout.fragment_cart) {
         val btn = binding.btnFromCart
         val bundle = bundleOf("name" to "Hello from CartFragment")
 
-        btn.setOnClickListener { Navigation.findNavController(view).navigate(R.id.nav_from_cart_to_third, bundle) }
+        btn.setOnClickListener { Navigation.findNavController(view).navigate(R.id.nav_from_cart, bundle) }
     }
 }

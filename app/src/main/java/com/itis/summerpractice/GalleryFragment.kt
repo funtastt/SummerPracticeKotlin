@@ -21,6 +21,6 @@ class GalleryFragment : Fragment(R.layout.fragment_gallery) {
         val bundle = bundleOf("name" to "Hello from GalleryFragment")
 
 
-        btn.setOnClickListener { Navigation.findNavController(view).navigate(R.id.nav_from_gallery_to_fourth, bundle) }
+        btn.setOnClickListener { Navigation.findNavController(view).navigate(R.id.nav_from_gallery, bundle) }
     }
 }
